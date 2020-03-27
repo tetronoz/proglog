@@ -8,7 +8,7 @@ import (
 )
 
 func NewHTTPServer(addr string) *http.Server {
-	httpsrv := NewHTTPServer()
+	httpsrv := newHTTPServer()
 	r := mux.NewRouter()
 	r.HandleFunc("/", httpsrv.handleProduce).Methods("POST")
 	r.HandleFunc("/", httpsrv.handleConsume).Methods("GET")
@@ -23,7 +23,7 @@ type httpServer struct {
 	Log *Log
 }
 
-func NewHTTPServer() *httpServer {
+func newHTTPServer() *httpServer {
 	return &httpServer{
 		Log: NewLog(),
 	}
