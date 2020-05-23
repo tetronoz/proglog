@@ -13,8 +13,8 @@ type Config struct {
 	CommitLog CommitLog
 }
 
-func NewGRPCServer(config *Config) (*grpc.Server, error) {
-	gsrv := grpc.NewServer()
+func NewGRPCServer(config *Config, opts ...grpc.ServerOption) (*grpc.Server, error) {
+	gsrv := grpc.NewServer(opts...)
 	srv, err := newgrpcServer(config)
 	if err != nil {
 		return nil, err
@@ -27,8 +27,8 @@ type grpcServer struct {
 	*Config
 }
 
-func newgrpcServer(config *Config) (srv *grpcServer, err error) {
-	srv = &grpcServer{
+func newgrpcServer(config *Config) (*grpcServer, error) {
+	srv := &grpcServer{
 		Config: config,
 	}
 	return srv, nil
