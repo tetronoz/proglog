@@ -1,5 +1,20 @@
 # 9fans.net/go v0.0.2
 ## explicit
+# github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible
+github.com/Knetic/govaluate
+# github.com/casbin/casbin v1.9.1
+## explicit
+github.com/casbin/casbin
+github.com/casbin/casbin/config
+github.com/casbin/casbin/effect
+github.com/casbin/casbin/errors
+github.com/casbin/casbin/log
+github.com/casbin/casbin/model
+github.com/casbin/casbin/persist
+github.com/casbin/casbin/persist/file-adapter
+github.com/casbin/casbin/rbac
+github.com/casbin/casbin/rbac/default-role-manager
+github.com/casbin/casbin/util
 # github.com/cloudflare/cfssl v1.4.1
 ## explicit
 # github.com/davecgh/go-spew v1.1.1
@@ -16,6 +31,11 @@ github.com/golang/protobuf/ptypes/timestamp
 # github.com/gorilla/mux v1.7.4
 ## explicit
 github.com/gorilla/mux
+# github.com/grpc-ecosystem/go-grpc-middleware v1.2.0
+## explicit
+github.com/grpc-ecosystem/go-grpc-middleware
+github.com/grpc-ecosystem/go-grpc-middleware/auth
+github.com/grpc-ecosystem/go-grpc-middleware/util/metautils
 # github.com/nsf/gocode v0.0.0-20190302080247-5bee97b48836
 ## explicit
 # github.com/pmezard/go-difflib v1.0.0
